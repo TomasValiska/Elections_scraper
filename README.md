@@ -30,6 +30,7 @@ def elections_scraper(link: str, name_output_file: str):
     # ... (celý váš kód funkce elections_scraper)
 
 ### Generování odkazů pro správný a nesprávný vstup
+
 response = get ("https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ")
 divided_response = bs(response.text, features="html.parser")
 
@@ -88,6 +89,7 @@ right_generated_link = f"https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj={co
 right_generated_name_file = f"{dictionary_choice[1]}.xlsx"
 
 #### Chybné vstupy
+
 wrong_input = {1: ["https://nesmyslnevolby.cz/", "U tří sumců"], 2: ["5479213", "osobní číslo"], 3: ["https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=11&xnumnuts=6206", "symboly"]}
 keys_choice = random.choice(range(1, 4))
 wrong_dict_choice = wrong_input[keys_choice]
@@ -95,6 +97,7 @@ wrong_generated_link = wrong_dict_choice[0]
 wrong_generated_name_file = wrong_dict_choice[1]
 
 ##### Výběr vstupu
+
 inputs = {1: [wrong_generated_link, wrong_generated_name_file], 2: [right_generated_link, right_generated_name_file], 3: [right_generated_name_file, right_generated_link]}
 if inputs:
     random_outcome = inputs[random.choice(range(1, 4))]
