@@ -29,7 +29,7 @@ from collections import defaultdict
 def elections_scraper(link: str, name_output_file: str):
     # ... (celý váš kód funkce elections_scraper)
 
-### Generování odkazů pro správný a nesprávný vstup
+## Generování odkazů pro správný a nesprávný vstup
 
 response = get ("https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ")
 divided_response = bs(response.text, features="html.parser")
@@ -105,4 +105,16 @@ if inputs:
     generated_name_file = random_outcome[1]
 
 print(generated_link, generated_name_file)
+elections_scraper(generated_link, generated_name_file)
+
+
+#Ukázka
+# Správný vstup
+generated_link = "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100"
+generated_name_file = "Praha.xlsx"
+elections_scraper(generated_link, generated_name_file)
+
+# Nesprávný vstup
+generated_link = "https://nesmyslnevolby.cz/"
+generated_name_file = "U tří sumců"
 elections_scraper(generated_link, generated_name_file)
