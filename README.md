@@ -27,7 +27,7 @@ import random
 from collections import defaultdict
 
 def elections_scraper(link: str, name_output_file: str):
-    \# ... (celý váš kód funkce elections_scraper)
+    # ... (celý váš kód funkce elections_scraper)
 
 ## Generování odkazů pro správný a nesprávný vstup
 
