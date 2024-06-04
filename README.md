@@ -109,12 +109,35 @@ elections_scraper(generated_link, generated_name_file)
 
 
 # Ukázka
+
 # Správný vstup
+
 generated_link = "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100"
 generated_name_file = "Praha.xlsx"
 elections_scraper(generated_link, generated_name_file)
+
+# Průběh stahování
+
+DOWNLOADING DATA FROM SELECTED URL: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5304
+SAVING TO A FILE: Ústí nad Orlicí.xlsx
+TERMINATING THE PROGRAM
+
+# Částečný výstup
+code	location	registered	envelops	valid	Občanská demokratická strana
+547981	Albrechtice	368	         214	      214	9
+573426	Anenská Studánka 150     70	          69	5
+553760	Běstovice	353	         221	     218	24
+
+
 
 # Nesprávný vstup
 generated_link = "https://nesmyslnevolby.cz/"
 generated_name_file = "U tří sumců"
 elections_scraper(generated_link, generated_name_file)
+
+# Výstup
+
+The wrong input, terminating the program.
+
+
+
