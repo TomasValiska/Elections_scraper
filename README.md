@@ -138,3 +138,7 @@ code       location            registered       envelops       valid    Občansk
 generated_link = "https://nesmyslnevolby.cz/"
 generated_name_file = "U tří sumců"
 elections_scraper(generated_link, generated_name_file)
+
+# Výstup
+
+The wrong input, terminating the program.
