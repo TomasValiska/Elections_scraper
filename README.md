@@ -30,7 +30,6 @@ def elections_scraper(link: str, name_output_file: str):
     # ... (celý váš kód funkce elections_scraper)
 
 ## Generování odkazů pro správný a nesprávný vstup
-
 response = get ("https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ")
 divided_response = bs(response.text, features="html.parser")
 
