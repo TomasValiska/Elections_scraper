@@ -123,10 +123,12 @@ SAVING TO A FILE: Ústí nad Orlicí.xlsx
 TERMINATING THE PROGRAM
 
 # Částečný výstup
-code	location	registered	envelops	valid	Občanská demokratická strana
+code       location            registered       envelops       valid    Občanská demokratická strana
 547981 Albrechtice              368               214            214     9
 573426 Anenská Studánka   150                70               69     5
 553760 Běstovice                  353              221            218    24
+
+
 
 
 
