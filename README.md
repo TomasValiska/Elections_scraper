@@ -1,6 +1,6 @@
 # Elections_scraper
 
-Tento projekt je nástroj pro scraping výsledků voleb z webu `https://volby.cz`. Program načte volební data z webu a uloží je do souboru Excel.
+Tento projekt je nástroj pro scraping výsledků voleb z webu `https://volby.cz`. Program načte volební data z webu a uloží je do souboru Excel. Formát excel jsem použil kvůli možnostem formátování výstupního souboru.
 
 ## Instalace
 
