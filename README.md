@@ -108,7 +108,7 @@ print(generated_link, generated_name_file)
 elections_scraper(generated_link, generated_name_file)
 
 
-#Ukázka
+# Ukázka
 # Správný vstup
 generated_link = "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100"
 generated_name_file = "Praha.xlsx"
